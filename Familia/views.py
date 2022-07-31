@@ -15,8 +15,8 @@ def crear_familiar(request):
 
 
 def lista_familiar(request):
-    Familia = Familiar.objects.all() 
+    familia = Familiar.objects.all() 
     context = {
-        "familia":Familia
+        "familia":familia
     }    
     return render(request, "lista_familiar.html", context=context)
