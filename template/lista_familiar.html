@@ -1,3 +1,6 @@
-<h1>Hola {{familiar.name}}, como estas?</h1>
 
-<h1>Mi {{familia.parentezco}} se llama {{Familiar.name}} y nacio el {{Familiar.nacimiento}}</h1>
+{% for familia in familiar %}
+
+<h1>Mi {{familia.parentezco}} se llama {{familia.name}} y nacio el {{familia.nacimiento}}</h1>
+
+{% endfor%}
