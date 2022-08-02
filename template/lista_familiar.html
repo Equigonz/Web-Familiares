@@ -1,6 +1,14 @@
 
-{% for familia in familiar %}
+{% for familia in familiar %} 
 
-<h1>Mi {{familia.parentezco}} se llama {{familia.name}} y nacio el {{familia.nacimiento}}</h1>
+<div class="card" style="width: 18rem;">
+    <img src="..." class="card-img-top" alt="...">
+    <div class="card-body">
+      <h3 class="card-title">{{familia.name}}  </h3>
+      <p class="card-text">{{familia.parentezco}}</p>
+      <a href="#" class="btn btn-primary">{{familia.nacimiento}}</a>
+    </div>
+  </div>
+
 
 {% endfor%}
